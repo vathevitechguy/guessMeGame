@@ -11,15 +11,17 @@ public class Main {
         System.out.println("Welcome " + name);
 
         System.out.println("Can we get started?");
+        System.out.println("\t1. Yes");
+        System.out.println("\t2. No");
         String decision = scanner.next();
         if (decision.equals("Yes")) {
             System.out.println("Great, Lets get started!");
-            System.out.println(". . . ");
+            System.out.println("- - - - ");
 
             Random random = new Random();
             int generated = random.nextInt(20) + 1;
 //            System.out.println(generated);
-            System.out.println("Guess the number generated");
+            System.out.println("Guess the generated number. . .");
             Scanner guess = new Scanner(System.in);
             int ans = guess.nextInt();
 
